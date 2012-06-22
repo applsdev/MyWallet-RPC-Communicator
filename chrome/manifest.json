@@ -1,0 +1,18 @@
+{
+    "name": "My Wallet RPC Communicator",
+    "description": "Enable My Wallet pages to communicate the Bitcoin-QT RPC interface.",
+    "version": "1.0",
+    "icons": {
+        "128": "128.png"
+    },
+    "content_scripts": [
+    {
+      "matches": ["https://www.blockchain.info/wallet/*","https://blockchain.info/wallet/*", "http://blockchain.info/wallet/*", "http://www.blockchain.info/wallet/*", "http://local.blockchain.info/wallet/*", "https://local.blockchain.info/wallet/*"],
+      "js": ["mywallet.js"]
+    }
+    ],
+    "permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
